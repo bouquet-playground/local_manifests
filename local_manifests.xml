@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote name="playground"
+          fetch="https://github.com/bouquet-playground"
+          revision="udc" />
+
+  <!-- device -->
+  <!-- shhhhh! its private -->
+
+  <!-- kernel -->
+  <project path="kernel/motorola/fogos" name="android_kernel_motorola_sm6375" remote="playground" clone-depth="1" />
+  <project path="prebuilts/clang/host/linux-x86/clang-r383902b1" name="moto-common/platform_prebuilts_clang_host_linux-x86_clang-r383902" remote="github" revision="master" />
+
+  <!-- vendor -->
+  <project path="vendor/motorola/fogos" name="vendor_motorola_fogos" remote="playground" clone-depth="1" />
+
+  <!-- others -->
+  <project path="hardware/motorola" name="sarthakroy2002/android_hardware_motorola" remote="github" revision="lineage-21" />
+  <project path="system/qcom" name="LineageOS/android_system_qcom" remote="github" revision="lineage-21" />
+
+</manifest>
