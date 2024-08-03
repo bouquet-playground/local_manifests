@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+        <remote name="playground"
+                fetch="https://github.com/bouquet-playground" />
+
+        <remote name="LineageOS"
+                fetch="https://github.com/LineageOS"
+                revision="refs/heads/lineage-21.0" />
+
+        <!-- From AOSP-bouquet -->
+        <project path="device/xiaomi/bouquet" name="platform_device_xiaomi_bouquet" remote="playground"  revision="Ursamoon" />
+        <project path="device/xiaomi/bouquet-kernel" name="platform_device_xiaomi_bouquet-kernel" remote="playground" revision="SaltyIceCream" />
+        <project path="device/xiaomi/bouquet-sepolicy" name="platform_device_xiaomi_bouquet-sepolicy" remote="playground" revision="Ursamoon" />
+        <project path="vendor/xiaomi" name="platform_vendor_xiaomi" remote="playground" revision="Ursamoon" />
+        <project path="hardware/qcom-caf/sdm660/display" name="platform_hardware_qcom_display" remote="playground" revision="Ursamoon" />
+        <project path="hardware/qcom-caf/sdm660/audio" name="platform_hardware_qcom_audio" remote="playground" revision="Ursamoon" />
+        <project path="hardware/qcom-caf/sdm660/media" name="platform_hardware_qcom_media" remote="playground" revision="Ursamoon" />
+        <project path="hardware/qcom-caf/sdm660/gps" name="platform_hardware_qcom_gps" remote="playground" revision="Ursamoon" />
+        <project path="device/qcom/sepolicy-legacy-um" name="platform_device_qcom_sepolicy-legacy-um" remote="playground" revision="Ursamoon" />
+
+        <!-- Additions from LineageOS -->
+        <project path="tools/extract-utils" name="android_tools_extract-utils" remote="LineageOS" />
+</manifest>
